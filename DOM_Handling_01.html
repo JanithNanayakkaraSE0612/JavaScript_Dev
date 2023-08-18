@@ -4,6 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 01 Dom Handling</title>
+    <style>
+        /*reset*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        /*Navigation*/
+        nav{
+            background-color: #ebca14;
+            max-width: 400px;
+            margin: 0 auto;
+            height: 50px;
+            line-height: 50px;
+            padding-left: 20px;
+        }
+        /*Container*/
+        .container .frm
+        .container .list
+        {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        .container form{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .container form input
+        .container form select{
+            height: 30px;
+        }
+
+        .container button{
+            padding: 7px 20px;
+            border: none;
+            background: #ebca14;
+            cursor: pointer;
+        }
+        /*items*/
+        .container .list ul{
+            list-style: none;
+            margin-top: 10px;
+        }
+        .container .list ul li{
+            padding: 20px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            margin-bottom: 2px;
+        }
+    </style>
 </head>
 <body>
     <nav id="navbar">
@@ -23,6 +78,17 @@
                     <button type="submit">Submit</button>
             </form>
         </div>
+        <div class="list">
+            <h3>Shopping Items</h3>
+            <ul id="li-items">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ul>
+        </div>
     </div>
+    <script src="DOM_Handling_01.js"></script>
 </body>
 </html>
