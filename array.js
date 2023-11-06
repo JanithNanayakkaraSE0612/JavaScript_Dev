@@ -22,6 +22,10 @@ let index = fruits.indexOf("apple");
 console.log(numOfFruits);
 console.log(index);
 
-for(let i = 1 ; i<fruits.length;i+=2){
+/*for(let i = 1 ; i<fruits.length;i+=2){
+    console.log(fruits[i]);
+}*/
+
+for(let i = fruits.length;i>0;i--){
     console.log(fruits[i]);
 }
